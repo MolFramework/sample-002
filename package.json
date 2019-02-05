@@ -1,0 +1,38 @@
+{
+  "name": "sample-002",
+  "version": "1.0.0",
+  "description": "testing mol framework",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MolFramework/sample-002.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --config './webpack.config.js'"
+  },
+  "keywords": [
+    "mol",
+    "mol-framework",
+    "sample",
+    "test"
+  ],
+  "author": "flkt <flkt.crnpio@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/MolFramework/sample-002/issues"
+  },
+  "homepage": "https://github.com/MolFramework/sample-002#readme",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "mol": "git+https://github.com/MolFramework/mol.git"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
