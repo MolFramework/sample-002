@@ -1,14 +1,15 @@
 {
   "name": "sample-002",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "testing mol framework",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MolFramework/sample-002.git"
   },
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --config './webpack.config.js'"
+    "start": "node index",
+    "scss": "sass --watch src/styles.scss:public/styles.css --style expanded"
   },
   "keywords": [
     "mol",
@@ -23,16 +24,11 @@
   },
   "homepage": "https://github.com/MolFramework/sample-002#readme",
   "dependencies": {
-    "lodash": "^4.17.11",
-    "mol": "git+https://github.com/MolFramework/mol.git"
+    "mol.core": "git+https://github.com/MolFramework/mol.core.git#7888ea162de72e5b5effe81e24e9cc9abd90fcc0",
+    "mol.grid": "git+https://github.com/MolFramework/mol.grid.git#78057220e2da09f7f8e09654130d251f00ab4f16",
+    "mol.normalize": "git+https://github.com/MolFramework/mol.normalize.git#86aa2570d1fbce640895273a596b47a21f237722"
   },
   "devDependencies": {
-    "css-loader": "^2.1.0",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.28.1",
-    "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
+    "express": "^4.17.1"
   }
 }
