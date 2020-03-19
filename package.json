@@ -8,7 +8,7 @@
     "url": "git+https://github.com/MolFramework/sample-002.git"
   },
   "scripts": {
-    "start": "node index",
+    "start": "node index | npm run scss",
     "scss": "sass --watch src/styles.scss:public/styles.css --style expanded"
   },
   "keywords": [
@@ -18,7 +18,7 @@
     "test"
   ],
   "author": "flkt <flkt.crnpio@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "none",
   "bugs": {
     "url": "https://github.com/MolFramework/sample-002/issues"
   },
@@ -29,6 +29,7 @@
     "mol.normalize": "git+https://github.com/MolFramework/mol.normalize.git#86aa2570d1fbce640895273a596b47a21f237722"
   },
   "devDependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "node-sass": "^4.13.1"
   }
 }
